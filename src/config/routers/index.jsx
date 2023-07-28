@@ -1,9 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
-import "../../App.css";
+import "./index.css";
 import HelpPage from "../../pages/help/HelpPage";
-// import SignupPage from "../../pages/Signup/SignupPage";
-// import LoginPage from "../../pages/login/LoginPage";
-
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "/src/layout/Layout";
 import LayoutPrivate from "/src/layout/LayoutPrivate";

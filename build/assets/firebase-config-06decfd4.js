@@ -1,4 +1,4 @@
-import{g as je}from"./index-e611ab65.js";const fo="/assets/netflix-2-logo-svgrepo-com-aab32307.svg";/**
+import{g as je}from"./index-d8aecc25.js";const fo="/assets/netflix-2-logo-svgrepo-com-aab32307.svg";/**
  * @license
  * Copyright 2017 Google LLC
  *
