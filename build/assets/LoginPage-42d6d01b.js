@@ -1,34 +1,24 @@
-import{s as a,j as e,r as l,u as x,a as c,b as u,c as w,L as m,_ as n}from"./index-d8aecc25.js";import{L as v,l as b}from"./firebase-config-06decfd4.js";import{u as j}from"./useDispatch-ba2c1e40.js";const y=a.div`
+import{s,j as e,r as d,u as x,a as c,b as u,c as w,L as m,_ as n}from"./index-ded45892.js";import{L as v,l as b}from"./firebase-config-30544efa.js";import{u as j}from"./useDispatch-ccc2444b.js";const y=s.div`
 	width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 6rem;
-	padding: 0 5rem;
+	padding: 0 4rem;
 	@media (max-width: 768px) {
 		padding: 0 2rem;
 	}
-	.logo {
+	figure {
+		width: 180px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		img {
-			width: 13rem;
-		}
-		@media (max-width: 768px) {
-			img {
-				width: 10rem;
-			}
+			width: 100%;
+			height: 100%;
 		}
 	}
-	button {
-		padding: 0.5rem 0.8rem;
-		background-color: #e50914;
-		border: none;
-		color: #fff;
-		font-size: 1rem;
-		font-weight: 800;
-		border-radius: 0.2rem;
-		cursor: pointer;
-	}
-`,_=()=>e.jsx(y,{children:e.jsx("div",{className:"logo",children:e.jsx("img",{src:v,alt:"logo"})})}),C=a.div`
+`,_=()=>e.jsx(y,{children:e.jsx("figure",{className:"logo",children:e.jsx("img",{src:v,alt:"logo"})})}),C=s.div`
 	width: 100vw;
 	height: 100vh;
 	img {
@@ -63,7 +53,7 @@ import{s as a,j as e,r as l,u as x,a as c,b as u,c as w,L as m,_ as n}from"./ind
 			height: 60vh;
 		}
 	}
-`,N=()=>e.jsxs(C,{children:[e.jsx("img",{src:"https://assets.nflxext.com/ffe/siteui/vlv3/bff5732c-7d13-45d1-9fab-476db25a1827/7d5a69bb-3f56-4468-b565-aaf59c718e1a/CL-es-20230710-popsignuptwoweeks-perspective_alpha_website_large.jpg",alt:""}),e.jsx("div",{className:"transparent"})]}),k=a.div`
+`,N=()=>e.jsxs(C,{children:[e.jsx("img",{src:"https://assets.nflxext.com/ffe/siteui/vlv3/bff5732c-7d13-45d1-9fab-476db25a1827/7d5a69bb-3f56-4468-b565-aaf59c718e1a/CL-es-20230710-popsignuptwoweeks-perspective_alpha_website_large.jpg",alt:""}),e.jsx("div",{className:"transparent"})]}),k=s.div`
 	position: relative;
 	width: 100vw;
 	height: 100vh;
@@ -259,4 +249,4 @@ import{s as a,j as e,r as l,u as x,a as c,b as u,c as w,L as m,_ as n}from"./ind
 			width: 100vw;
 		}
 	}
-`,S=()=>{const[i,h]=l.useState(!1),s=j(),o=x();l.useEffect(()=>{localStorage.getItem("userState")&&o("/netflix")},[o]);const d=c(t=>t.user.userEmail),f=c(t=>t.user.userPassword),p=()=>{h(!i)},g=async t=>{t.preventDefault();try{(await b({email:d,password:f})).operationType==="signIn"&&(n.success("Welcome to Netflix"),localStorage.setItem("userState",!0),o("/netflix"))}catch(r){r.code==="auth/user-not-found"?n.error("The email address is not registered"):r.code==="auth/wrong-password"&&n.error("The password is invalid"),console.log(r)}};return e.jsxs(k,{children:[e.jsx(N,{}),e.jsxs("div",{className:"content",children:[e.jsx(_,{}),e.jsx("div",{className:"transparent_modal",children:e.jsxs("div",{className:"content_form",children:[e.jsx("h2",{children:"Sign In"}),e.jsxs("form",{onSubmit:g,children:[e.jsx("input",{type:"text",placeholder:"Email",required:!0,defaultValue:d,onChange:t=>s(u({userEmail:t.target.value.trim().toLowerCase()}))}),e.jsx("input",{autoComplete:"off",type:"password",placeholder:"Password",required:!0,onChange:t=>s(w({userPassword:t.target.value}))}),e.jsx("button",{type:"submit",children:"Sign In"})]}),e.jsxs("div",{className:"content_form_help",children:[e.jsxs("div",{className:"form_remember",children:[e.jsx("input",{htmlFor:"remember",type:"checkbox",name:"remember",id:"remember"}),e.jsx("label",{htmlFor:"remember",id:"remember",children:"Remember me"})]}),e.jsx("div",{children:e.jsx(m,{to:"/Help",children:"Need help?"})})]}),e.jsxs("div",{className:"content_social",children:[e.jsxs("h6",{children:["New to Netflix? ",e.jsx(m,{to:"/",children:"Sign up now."})]}),e.jsxs("h4",{children:["This page is protected by Google reCAPTCHA to ensure you are not a bot."," ",e.jsx("span",{className:`${i?"inactive ":""}`,onClick:p,children:"Learn more."})]})]}),i&&e.jsx("div",{className:"content_parrafo",children:e.jsxs("p",{children:["The information collected by Google reCAPTCHA is subject to the Google ",e.jsx("span",{children:"Privacy Policy"})," and"," ",e.jsx("span",{children:" Terms of Service"}),", and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalized advertising by Google)."]})})]})})]})]})};export{S as default};
+`,S=()=>{const[r,h]=d.useState(!1),a=j(),o=x();d.useEffect(()=>{localStorage.getItem("userState")&&o("/netflix")},[o]);const l=c(t=>t.user.userEmail),f=c(t=>t.user.userPassword),p=()=>{h(!r)},g=async t=>{t.preventDefault();try{(await b({email:l,password:f})).operationType==="signIn"&&(n.success("Welcome to Netflix"),localStorage.setItem("userState",!0),o("/netflix"))}catch(i){i.code==="auth/user-not-found"?n.error("The email address is not registered"):i.code==="auth/wrong-password"&&n.error("The password is invalid"),console.log(i)}};return e.jsxs(k,{children:[e.jsx(N,{}),e.jsxs("div",{className:"content",children:[e.jsx(_,{}),e.jsx("div",{className:"transparent_modal",children:e.jsxs("div",{className:"content_form",children:[e.jsx("h2",{children:"Sign In"}),e.jsxs("form",{onSubmit:g,children:[e.jsx("input",{type:"text",placeholder:"Email",required:!0,defaultValue:l,onChange:t=>a(u({userEmail:t.target.value.trim().toLowerCase()}))}),e.jsx("input",{autoComplete:"off",type:"password",placeholder:"Password",required:!0,onChange:t=>a(w({userPassword:t.target.value}))}),e.jsx("button",{type:"submit",children:"Sign In"})]}),e.jsxs("div",{className:"content_form_help",children:[e.jsxs("div",{className:"form_remember",children:[e.jsx("input",{htmlFor:"remember",type:"checkbox",name:"remember",id:"remember"}),e.jsx("label",{htmlFor:"remember",id:"remember",children:"Remember me"})]}),e.jsx("div",{children:e.jsx(m,{to:"/Help",children:"Need help?"})})]}),e.jsxs("div",{className:"content_social",children:[e.jsxs("h6",{children:["New to Netflix? ",e.jsx(m,{to:"/",children:"Sign up now."})]}),e.jsxs("h4",{children:["This page is protected by Google reCAPTCHA to ensure you are not a bot."," ",e.jsx("span",{className:`${r?"inactive ":""}`,onClick:p,children:"Learn more."})]})]}),r&&e.jsx("div",{className:"content_parrafo",children:e.jsxs("p",{children:["The information collected by Google reCAPTCHA is subject to the Google ",e.jsx("span",{children:"Privacy Policy"})," and"," ",e.jsx("span",{children:" Terms of Service"}),", and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalized advertising by Google)."]})})]})})]})]})};export{S as default};

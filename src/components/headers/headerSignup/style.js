@@ -5,21 +5,22 @@ export const Container = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 6rem;
-	padding: 0 10rem;
+	padding: 0 4rem;
 	@media (max-width: 768px) {
 		padding: 0 2rem;
 	}
-	.logo {
+	figure {
+		width: 150px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		img {
-			width: 10rem;
-		}
-		@media (max-width: 768px) {
-			img {
-				width: 6rem;
-			}
+			width: 100%;
+			height: 100%;
 		}
 	}
+
 	button {
 		padding: 0.5rem 0.8rem;
 		background-color: #e50914;

@@ -14,12 +14,12 @@ const Header = () => {
 
 	return (
 		<Container>
-			<div className='logo'>
+			<figure className='logo'>
 				<img
 					src={logoNetflix}
 					alt='logo'
 				/>
-			</div>
+			</figure>
 
 			{/* //aqui indica que si props es true entonces que muestre sign out y si es false que muestre sign in */}
 			<button onClick={handleNavigate}>Log in</button>

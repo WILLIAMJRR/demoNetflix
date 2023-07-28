@@ -1,4 +1,4 @@
-import{s as m,j as e,u,r as c,a as h,b as p,c as f,_ as a}from"./index-d8aecc25.js";import{L as x,r as w}from"./firebase-config-06decfd4.js";import{u as b}from"./useDispatch-ba2c1e40.js";const v=m.div`
+import{s as m,j as e,u,r as c,a as h,b as p,c as f,_ as a}from"./index-ded45892.js";import{L as x,r as w}from"./firebase-config-30544efa.js";import{u as b}from"./useDispatch-ccc2444b.js";const v=m.div`
 	width: 100vw;
 	height: 100vh;
 	img {
@@ -38,21 +38,22 @@ import{s as m,j as e,u,r as c,a as h,b as p,c as f,_ as a}from"./index-d8aecc25.
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 6rem;
-	padding: 0 10rem;
+	padding: 0 4rem;
 	@media (max-width: 768px) {
 		padding: 0 2rem;
 	}
-	.logo {
+	figure {
+		width: 150px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		img {
-			width: 10rem;
-		}
-		@media (max-width: 768px) {
-			img {
-				width: 6rem;
-			}
+			width: 100%;
+			height: 100%;
 		}
 	}
+
 	button {
 		padding: 0.5rem 0.8rem;
 		background-color: #e50914;
@@ -63,7 +64,7 @@ import{s as m,j as e,u,r as c,a as h,b as p,c as f,_ as a}from"./index-d8aecc25.
 		border-radius: 0.2rem;
 		cursor: pointer;
 	}
-`,z=()=>{const s=u(),o=()=>{s("/login")};return e.jsxs(j,{children:[e.jsx("div",{className:"logo",children:e.jsx("img",{src:x,alt:"logo"})}),e.jsx("button",{onClick:o,children:"Log in"})]})},C=m.div`
+`,z=()=>{const s=u(),o=()=>{s("/login")};return e.jsxs(j,{children:[e.jsx("figure",{className:"logo",children:e.jsx("img",{src:x,alt:"logo"})}),e.jsx("button",{onClick:o,children:"Log in"})]})},C=m.div`
 	position: relative;
 	.content {
 		position: absolute;

@@ -5,29 +5,19 @@ export const Container = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 6rem;
-	padding: 0 5rem;
+	padding: 0 4rem;
 	@media (max-width: 768px) {
 		padding: 0 2rem;
 	}
-	.logo {
+	figure {
+		width: 180px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		img {
-			width: 13rem;
+			width: 100%;
+			height: 100%;
 		}
-		@media (max-width: 768px) {
-			img {
-				width: 10rem;
-			}
-		}
-	}
-	button {
-		padding: 0.5rem 0.8rem;
-		background-color: #e50914;
-		border: none;
-		color: #fff;
-		font-size: 1rem;
-		font-weight: 800;
-		border-radius: 0.2rem;
-		cursor: pointer;
 	}
 `;
