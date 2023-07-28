@@ -1,5 +1,4 @@
 /* eslint-disable react-refresh/only-export-components */
-import "./index.css";
 import HelpPage from "../../pages/help/HelpPage";
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "/src/layout/Layout";
